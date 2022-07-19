@@ -1,0 +1,364 @@
+ html,
+  body { 
+       height: 80%;  
+     padding: 0;
+     margin: 0;
+     font-family: arial;
+
+ }      
+
+  #map {
+      position: absolute; 
+     left: 0%;
+     top:12%;
+     width: 100%;
+     height: 90%;
+     border-style: solid;
+     border-color: red;
+     border-width: thin;
+	  z-index: 0; 
+
+ }  
+
+ #query_tab {
+     position: absolute;
+     padding: 0.5% 0%;
+     left: 0%;
+     width: 0%;
+     height: 100%;
+     /* //border-style: solid;
+     //border-color: black;
+     //border-width: thin; */
+     visibility: hidden;
+     /* //overflow: scroll; */
+
+ }
+
+ #legend {
+     z-index: 11;
+     padding: 2px 4px;
+     border: 1px solid grey;
+     position: absolute;
+     bottom: 8%;
+     height: 0%;
+     overflow: scroll;
+     width: 0%;
+     right: 0%;
+     z-index: 999;
+     background-color: #ffffff;
+     font-weight: bold;
+     visibility: hidden;
+
+ }
+
+ #layer {
+     position: relative;
+     width: 70%;
+ }
+
+ #attributes {
+     position: relative;
+     width: 70%;
+ }
+
+ #operator {
+     position: relative;
+     width: 70%;
+ }
+
+ #value {
+     position: relative;
+     width: 70%;
+ }
+
+ #table_data {
+     position: absolute;
+     bottom: 0%;
+     overflow: scroll;
+     left: 0%;
+     right: 0%;
+     height: 0%;
+     border: 1px solid #4CAF50;
+ }
+
+ #table {
+     white-space: nowrap;
+     grid-template-areas: "head-fixed""body-scrollable";
+ }
+
+
+ #table th {
+     position: -webkit-sticky;
+     /* for Safari */
+     position: sticky;
+     top: 0px;
+     background-color: rgb(122, 209, 100);
+ }
+
+ #wms_layers_btn {
+     position: absolute;
+     z-index: 600;
+     top: 1%;
+     left: 30%;
+ }
+
+ #query_panel_btn {
+     position: absolute;
+     z-index: 600;
+     top: 1%;
+     left: 10%;
+ }
+
+ #legend_btn {
+     position: absolute;
+     z-index: 600;
+     top : 1%;
+     right :25%;
+ }
+
+#table_wms_layers{
+     white-space: nowrap;
+     grid-template-areas: "head-fixed""body-scrollable";
+ }
+ 
+ #table_wms_layers th {
+     position: -webkit-sticky;
+     /* for Safari */
+     position: sticky;
+     top: 0px;
+     background-color: rgb(122, 209, 100);
+ }
+
+ .modal-dialog {
+     max-width: 60% !important;
+     height: 60% !important;
+     top: 18% !important;
+
+
+ }
+
+ .form-select {
+     left: 0%;
+     width: 85% !important;
+
+ }
+
+ .form-control {
+     left: 0%;
+     width: 85% !important;
+
+ }
+
+ .leaflet-popup-content {
+     width: auto !important;
+ }
+
+ #clear_btn {
+     position: absolute;
+     z-index: 500;
+     top: 1%;
+     left: 50%;
+
+ }
+
+ #info_btn {
+     position: absolute;
+     z-index: 500;
+     top: 1%;
+     left: 80%;
+
+ }
+ .reachability-control-settings-button
+ {
+     font-size: 22px;
+ }
+
+/* #header {
+     background: lightyellow;
+}
+.header{ -webkit-text-size-adjust: 100%;
+ -webkit-tap-highlight-color: rgba(0,0,0,0);
+  word-wrap: break-word; 
+ font-size: 87.5%;
+ font-family: Roboto;
+ line-height: 1.42857143;
+ color: #333;
+ margin-right: 0px;
+ margin-left: 0px;
+
+}
+/* @media only screen and (min-width: 851px)
+.layout-container {
+    max-width: 1170px;
+} */
+/*.layout-container {
+    max-width: 1500px;
+    margin-left: 0%;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.header .layout-container .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.row {
+    margin-right: -7px;
+    margin-left: -7px;
+}
+.region-site-branding {
+    max-height: 85px;
+}
+.site-branding {
+    display: table-cell;
+    vertical-align: middle;
+}
+.site-branding__logo {
+    display: table-cell;
+    vertical-align: baseline; 
+    max-width: 25%;
+    height: 90px;
+    /* min-width: 80px; */
+  /*  text-align: left;
+}
+/*.site-branding__text {
+    padding-left: 10px !important;
+    display: table-cell !important;
+    vertical-align: baseline !important;
+    text-size-adjust: 10;
+}
+.region-header, .region-header a, .region-header li a.is-active, .site-branding__text, .site-branding, .site-branding__text a, .site-branding a, .region-secondary-menu .menu-item a, .region-secondary-menu .menu-item a.is-active {
+    color: #292929;
+    background: inherit;
+}*/
+
+
+
+
+
+
+button.btn-settings {
+margin: 25px;
+padding: 20px 30px;
+font-size: 1.2em;
+background-color: #337ab7;
+color: white;
+}
+button.btn-settings:active {
+color: white;
+}
+.modal {
+ overflow: hidden;
+}
+.modal-dialog {
+
+ height:300px;
+}
+.modal-header {
+height:30px;
+padding: 20px;
+background-color:#18456b;
+color:white;
+}
+.modal-title {
+margin-top:-10px;
+font-size:16px;
+}
+.modal-header .close {
+margin-top:-10px;
+color:#fff;
+}
+.modal-body {
+color:#888;
+padding: 5px 35px 20px;
+}
+.modal-body h3 {
+text-align: center;
+}
+.modal-body p {
+padding-top:10px;
+font-size: 1.1em;
+}
+.header {
+  overflow: auto;
+  margin-top: 10px;
+  background-color: cornsilk;
+}
+
+
+.header a.logo {
+  float: left;
+  padding: 5px;
+  position:relative;
+}
+.header a.logo1 {
+    float: right;
+    padding:5px;
+    position: fixed;
+}
+
+
+
+
+.header-right {
+  float: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: left;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: right;
+  }
+}
+.layout-container {
+  max-width: 1100px;
+  margin-left:130px;
+  margin-right: auto;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.site-branding {
+  display: table-cell;
+  vertical-align: middle;
+}
+.site-branding__name {
+  font-size: 1.9em;
+  font-weight: 700;
+
+  line-height: 1;
+}
+.site-branding__text {
+  padding-left: 13px !important;
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+.site-branding__slogan {
+  font-size: 1.3em;
+  margin-top: 0px;
+  word-spacing: 0.1em;
+  font-style: italic;
+}
+.logout{
+  position: absolute;
+  right:25px;
+  top:4%;
+
+}
+
+
+#title{
+    position: absolute;
+     top: 0%;
+        left: 0%;
+     width: 100%;
+    height: 4%;
+    background-color: #f1f3f4;
+    border: 1px solid darkgrey;
+   }
